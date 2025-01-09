@@ -8,3 +8,6 @@ https://roadmap.sh/projects/basic-html-website<br>
 
 <a href='/03-personal-portfolio/'>03-personal-portfolio</a><br>
 https://roadmap.sh/projects/portfolio-website<br>
+
+<a href='/04-changelog-component/'>03-personal-portfolio</a><br>
+https://roadmap.sh/projects/changelog-component<br>
