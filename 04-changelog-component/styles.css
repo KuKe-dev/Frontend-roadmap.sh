@@ -1,0 +1,121 @@
+:root {
+    --background-color-light: #718d8d;
+    --background-color: #2e2e3a;
+    --text-color: #fff;
+    --line-color: #00f0f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color-light);
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin: 0;
+}
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.changelog {
+    max-width: 500px;
+    width: 100%;
+
+    background: var(--background-color);
+    padding: 30px 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    color: var(--line-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: var(--background-color-light);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 75px;
+}
+.timeline {
+    position: relative;
+    text-align: right;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    border-radius: 50px;
+    background-color: var(--line-color);
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+
+}
+
+.timeline-item {
+    position: relative;
+    width: calc(50% - 1px);
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+
+    top: 25%;
+    right: -6px;
+
+    background-color: var(--line-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.timeline-item:nth-child(even) {
+    left: calc(50% + 1px);
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .timeline-item:nth-child(even):before {
+    content: '';
+    position: absolute;
+
+    top: 25%;
+    left: -6px;
+
+    background-color: var(--line-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.timeline-date {
+    font-size: 13px;
+    font-style: italic;
+    color: var(--background-color-light);
+    margin-bottom: 10px;
+}
+
+.button {
+    margin-top: 50px;
+    background-color: #00a0a0;
+    padding: 20px 40px;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 10px;
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
