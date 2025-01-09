@@ -1,0 +1,87 @@
+.intro-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 100px 0 0;
+}
+.intro-description {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 5px;
+
+    color: rgba(var(--text-color-value), 0.7);
+}
+
+.intro {
+    margin-bottom: 120px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+@media (max-width: 845px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    .projects {
+        flex-grow: 1;
+        text-wrap: nowrap;
+    }
+        .projects-title {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        .projects ul li {
+            list-style-type: none;
+        }
+
+    .experience {
+        flex-grow: 1;
+    }
+        .experience-title {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        .job {
+            margin: 10px;
+            padding: 20px 20px;
+
+            align-items: center;
+
+            background-color: var(--background-transparent);
+            border-radius: 15px;
+        }
+            .job-title {
+                margin: 0;
+                font-size: 20px;
+                font-weight: 700;
+                text-wrap: nowrap;
+            }
+            .job-info {
+                margin: 5px 0 10px 0;
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(var(--text-color-value), 0.8);
+                font-style: italic;
+            }
+            .job-description {
+                margin: 0;
+                font-size: 16px;
+                font-weight: 500;
+
+                max-width: 40ch;
+                min-width: 20ch;
+            }
+
+    .education {
+        flex-grow: 1;
+    }

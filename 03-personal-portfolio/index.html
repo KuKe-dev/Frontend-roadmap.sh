@@ -20,32 +20,44 @@
     
         <link rel="icon" href="https://i.ibb.co/NT3RyRq/PDC-0907.jpg" type="image/x-icon" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="index.css" />
+        
+        <script src="./toggle-theme.js"></script>
+    
     </head>
 
     <body>
-        
-        <header id="navbar">
-            <div>
-                <img src="https://i.ibb.co/NT3RyRq/PDC-0907.jpg" width="100px"/>
-            </div>
-            <nav id="buttons">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="articles.html">Articles</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
+
+        <header class="header">
+            <img class="header-logo" src="https://i.ibb.co/NT3RyRq/PDC-0907.jpg" width="100px"/>
+                <ul class="header-nav">
+                    <li>
+                        <a class="header-nav-button" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-button" href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-button" href="articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-button" href="contact.html">Contact</a>
+                    </li>
+                    <button class="toggle-theme" onclick="toggleTheme()">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="m12 22c5.5228475 0 10-4.4771525 10-10s-4.4771525-10-10-10-10 4.4771525-10 10 4.4771525 10 10 10zm0-1.5v-17c4.6944204 0 8.5 3.80557963 8.5 8.5 0 4.6944204-3.8055796 8.5-8.5 8.5z" fill="currentColor"/></svg>                            
+                    </button>
                 </ul>
-            </nav>
         </header>
 
-        <main>
-            <section id="intro">
-                <h1>Frontend Developer</h1>
-                <p>I'm building stuff for the web</p>
-            </section>
+        <section class="intro">
+            <h1 class="intro-title">Frontend Developer</h1>
+            <p class="intro-description">I'm building stuff for the web</p>
+        </section>
 
-            <section id="projects">
-                <h2>Projects</h2>
+        <main class="main">
+            <section class="projects">
+                <h2 class="projects-title">Projects</h2>
                 <ul>
                     <li><h4>HTML Only Portfolio</h4></li>
                     <li><h4>Calculator</h4></li>
@@ -55,20 +67,39 @@
                 </ul>
             </section>
 
-            <section id="experience">
-                <h2>Work experience</h2>
+            <section class="experience">
+
+                <h2 class="experience-title">
+                    Work experience
+                </h2>
+
                 <article class="job">
-                    <h4>Whatever company - Whatever job</h4>
-                    <p>dates, place<br>What I did</p>
+                    <h4 class="job-title">
+                        Whatever company - Whatever job
+                    </h4>
+
+                    <p class="job-info">Dates, place</p>
+                    
+                    <p class="job-description">
+                        What I did asdfawef ahfkuhefaikfuhaewuh aikeufhakeuifhakeufhakeiufh kauehf auefafeuihaikefuhikauh
+                    </p>
                 </article>
+
                 <article class="job">
-                    <h4>Whatever company 2 - Whatever job 2</h4>
-                    <p>dates, place<br>What I did</p>
+                    <h4 class="job-title">
+                        Whatever company 2 - Whatever job 2
+                    </h4>
+
+                    <p class="job-info">Dates, place</p>
+
+                    <p class="job-description"
+                    >What I did
+                    </p>
                 </article>
 
             </section>
                 
-            <section id="education">
+            <section class="education">
                 <h2>Education</h2>
                 <article class="school">
                     <h4>Whatever school - Whatever degree</h4>
