@@ -1,0 +1,149 @@
+:root {
+    --body-color: #fffdfd;
+    --background-color: #222222;
+    --text-color: #ffffff;
+    --text-2color: #777;
+    --position-bubble: 7%;
+    --card-height: 300px;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.testimonial-card-1 {
+    display: inline-block;
+    flex-direction: column;
+    margin: 40px;
+    width: 400px;
+}
+.speech-bubble {
+    font-family:"Trebuchet MS", sans-serif;
+    position: relative;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    padding: 10px 30px;
+    margin-bottom: 30px;
+}
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: var(--background-color) transparent transparent transparent;
+    top: 100%;
+    left: calc(var(--position-bubble) + 30px);
+    transform: translateX(-50%);
+    
+}
+
+.profile-1 {
+    position: relative;
+    left: var(--position-bubble);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-img-1 {
+    width: 60px;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    object-fit:cover;
+}
+
+
+.profile-name-1 {
+    margin: 0;
+    font-size: larger;
+}
+
+.profile-employment-1 {
+    font-size: small;
+    margin: 0;
+    color: #777;
+}
+
+/*---------------------------------------*/
+
+.testimonial-card-2 {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 400px;
+    height: max-content;
+    padding: 10px 30px;
+    border: solid 2px var(--background-color);
+    border-radius: 30px;
+}
+
+.text-2 {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.profile-2 {
+    position: relative;
+    left: 4%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-img-2 {
+    width: 60px;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    object-fit:cover;
+}
+
+
+.profile-name-2 {
+    margin: 0;
+    font-size: larger;
+}
+
+.profile-employment-2 {
+    font-size: small;
+    margin: 0;
+    color: #777;
+}
+
+/*---------------------------------------------*/
+
+.testimonial-card-3 {
+    display: flex;
+    gap: 20px;
+    height: var(--card-height);
+}
+
+.profile-img-3 {
+    display: inline-block;
+    width: auto;
+    height: max;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    object-fit:cover;
+}
+
+.content-3 {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    aspect-ratio: 4/3;
+    padding: 10px 30px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.text-3 {
+    position: absolute;
+    bottom: 5%;
+    font-size: calc(var(--card-height)/10 - 10px);
+    margin-right: 30px;
+    font-family: "Trebuchet MS", sans-serif;
+}

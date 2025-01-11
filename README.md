@@ -11,3 +11,6 @@ https://roadmap.sh/projects/portfolio-website<br>
 
 <a href='/04-changelog-component/'>04-changelog-component</a><br>
 https://roadmap.sh/projects/changelog-component<br>
+
+<a href='/05-testimonial-cards/'>05-testimonial-cards</a><br>
+https://roadmap.sh/projects/testimonial-cards<br>
