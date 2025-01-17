@@ -14,3 +14,6 @@ https://roadmap.sh/projects/changelog-component<br>
 
 <a href='/05-testimonial-cards/'>05-testimonial-cards</a><br>
 https://roadmap.sh/projects/testimonial-cards<br>
+
+<a href='/06-datepicker-UI/'>06-datepicker-UI</a><br>
+https://roadmap.sh/projects/datepicker-ui<br>

@@ -118,6 +118,7 @@ body {
     display: flex;
     gap: 20px;
     height: var(--card-height);
+    justify-content: center;
 }
 
 .profile-img-3 {

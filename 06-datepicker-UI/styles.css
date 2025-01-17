@@ -1,0 +1,115 @@
+:root {
+    --width: 200px;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.datepicker {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+    aspect-ratio: 1;
+    border: solid 1px gray;
+    border-radius: 4px;
+}
+.datepicker-input {
+    display: flex;
+    height: 40px;
+}
+.datepicker-input input {
+    border: none;
+    width: 80%;
+    border-bottom: solid 1px gray;
+    padding: 10px;
+}
+.datepicker-input button {
+    border: none;
+    width: 20%;
+    border-bottom: solid 1px gray;
+    background: none;
+    padding: 5px 10px;
+}
+.datepicker-input button img {
+    width: 25px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.calendar-controler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: solid 1px gray;
+}
+.calendar-month {
+    margin: 0;
+    font-weight: 600;
+}
+
+.calendar-prev, .calendar-next {
+    height: min-content;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgba(13, 8, 77, 0.185);
+}
+.calendar-prev:hover, .calendar-next:hover {
+    background-color: rgba(13, 8, 77, 0.3);
+}
+.calendar-prev:active, .calendar-next:active {
+    background-color: rgba(13, 8, 77, 0.5); 
+}
+
+.calendar-body {
+    margin: 15px 20px;
+}
+
+.calendar-day-names {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    margin-bottom: 10px;
+}
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+}
+.calendar-days > span:nth-child(n +8) {
+    background-color: rgba(0, 0, 0, 0.103);
+    text-align: center;
+    
+    width: 2ch;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    padding: 3px;
+    margin: 10px;
+}
+.calendar-days > span:nth-child(n +8):hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.calendar-days > span:nth-child(n +8):active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.calendar-days > span:nth-child(n - 7) {
+    text-align: center;
+    cursor: default;
+    
+    width: 2ch;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    padding: 3px;
+    margin: 10px;
+}
