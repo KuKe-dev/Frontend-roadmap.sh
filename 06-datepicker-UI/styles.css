@@ -24,19 +24,22 @@ body {
 .datepicker-input {
     display: flex;
     height: 40px;
+    border-bottom: solid 1px gray;
 }
 .datepicker-input input {
     border: none;
     width: 80%;
-    border-bottom: solid 1px gray;
     padding: 10px;
 }
 .datepicker-input button {
     border: none;
     width: 20%;
-    border-bottom: solid 1px gray;
     background: none;
     padding: 5px 10px;
+}
+.datepicker-input button:active {
+    background-color: rgba(0, 0, 0, 0.1);
+    scale: 0.9;
 }
 .datepicker-input button img {
     width: 25px;
