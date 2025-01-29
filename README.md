@@ -21,5 +21,8 @@ https://roadmap.sh/projects/datepicker-ui<br>
 <a href='/10-tabs/'>10-tabs</a><br>
 https://roadmap.sh/projects/simple-tabs<br>
 
-<a href='/10-tabs/'>11-cookie-consent</a><br>
+<a href='/11-cookie-consent/'>11-cookie-consent</a><br>
 https://roadmap.sh/projects/cookie-consent<br>
+
+<a href='/12-restricted-textarea/'>12-restricted-textarea</a><br>
+https://roadmap.sh/projects/restricted-textarea<br>

@@ -1,0 +1,37 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.textarea-container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+}
+.textarea {
+    font-family: inherit;
+    padding: 10px;
+    padding-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+.textarea:focus {
+    border-color: inherit;
+    outline-color: inherit;
+}
+.textarea[maxReached = true] {
+    border-color: #ff0000;
+    outline-color: #ff0000;
+    color: #ff0000;
+}
+.char-count {
+    position: absolute;
+    font-weight: 700;
+    right: 20px;
+    bottom: 5px;
+    right: px;
+    font-size: 12px;
+    color: #7a7a7a;
+}
+.char-count[maxReached = true] {
+    color: #ff0000;
+}
