@@ -1,0 +1,23 @@
+:root {
+    --background-color: #f3f1ef;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+.tab-link {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.tab-link.active {
+    background-color: #f3f1ef;
+    border-bottom: 2px solid #333;
+}
+.tab-content {
+    background-color: var(--background-color);
+    padding: 20px;
+}

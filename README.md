@@ -17,3 +17,6 @@ https://roadmap.sh/projects/testimonial-cards<br>
 
 <a href='/06-datepicker-UI/'>06-datepicker-UI</a><br>
 https://roadmap.sh/projects/datepicker-ui<br>
+
+<a href='/10-tabs/'>10-tabs</a><br>
+https://roadmap.sh/projects/simple-tabs<br>
